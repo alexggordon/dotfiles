@@ -299,6 +299,7 @@ function init_files() {
   local i f dirname oses os opt remove
   dirname="$(dirname "$1")"
   f=("$@")
+  mkdir -p ~/$DOTFILES/caches/init/
   menu_options=(); menu_selects=()
   for i in "${!f[@]}"; do menu_options[i]="$(basename "${f[i]}")"; done
   if [[ -e "$init_file" ]]; then
