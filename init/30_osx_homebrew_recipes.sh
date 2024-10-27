@@ -25,6 +25,7 @@ recipes=(
   tree
   wget
   duckdb
+  tldr
 )
 
 brew_install_recipes
