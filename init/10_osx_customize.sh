@@ -712,27 +712,3 @@ defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -int 1
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -int 1
 defaults write com.knollsoft.Rectangle SUHasLaunchedBefore -int 1
 defaults write com.knollsoft.Rectangle launchOnLogin -int 1
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Activity Monitor" \
-	"Address Book" \
-	"Calendar" \
-	"cfprefsd" \
-	"Contacts" \
-	"Dock" \
-	"Finder" \
-	"Mail" \
-	"Messages" \
-	"Photos" \
-	"Safari" \
-	"Rectangle" \
-	"SystemUIServer" \
-	"Terminal" \
-	"Rectangle" \
-	"Twitter" \
-	"iCal"; do
-	killall "${app}" &> /dev/null
-done
