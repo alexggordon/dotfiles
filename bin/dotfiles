@@ -414,7 +414,7 @@ if [[ ! -d $DOTFILES ]]; then
   # Dotfiles directory doesn't exist? Clone it! (probably means you're running via curl)
   e_header "Downloading dotfiles"
   git clone --branch master --recursive \
-    git@github.com:alexggordon/dotfiles.git $DOTFILES
+    https://github.com/alexggordon/dotfiles.git $DOTFILES
   cd $DOTFILES
 elif [[ "$1" != "restart" ]]; then
   # Make sure we have the latest files.
