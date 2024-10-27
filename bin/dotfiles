@@ -392,8 +392,8 @@ export prompt_delay=5; is_dotfiles_bin || prompt_delay=15
 while true; do sudo -n true; sleep 10; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Ensure that we can actually, like, compile anything.
-if [[ ! "$(type -P gcc)" ]] && is_osx; then
-  e_error "XCode or the Command Line Tools for XCode must be installed first."
+if [[ ! "$(xcode-select -p)" ]] && is_osx; then
+  xcode-select --install
   exit 1
 fi
 
@@ -405,7 +405,7 @@ if [[ ! "$(type -P git)" ]] && is_ubuntu; then
 fi
 
 # If Git isn't installed by now, something exploded. We gots to quit!
-if [[ ! "$(type -P git)" ]]; then
+if [[ ! "$(git)" ]]; then
   e_error "Git should be installed. It isn't. Aborting."
   exit 1
 fi
@@ -453,7 +453,7 @@ do_stuff link
 # copy config
 do_stuff config
 
-# setup application default
+# setup application configs
 do_stuff init
 
 # Alert if backups were made.
