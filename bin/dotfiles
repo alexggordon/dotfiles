@@ -450,9 +450,10 @@ do_stuff copy
 # files to symlink
 do_stuff link
 
-# 
+# copy config
 do_stuff config
 
+# setup application default
 do_stuff init
 
 # Alert if backups were made.

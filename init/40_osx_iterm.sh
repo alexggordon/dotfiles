@@ -1,6 +1,11 @@
 # OSX-only stuff. Abort if not OSX.
 is_osx || return 1
 
+
+###############################################################################
+# Iterm2.app                                                               #
+###############################################################################
+
 # Specify the preferences directory
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/apps/iterm/"
 
