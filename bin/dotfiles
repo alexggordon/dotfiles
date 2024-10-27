@@ -417,6 +417,7 @@ if [[ ! -d $DOTFILES ]]; then
   git clone --branch main --recursive \
     https://github.com/alexggordon/dotfiles.git $DOTFILES
   cd $DOTFILES
+  git submodule update --init --recursive --quiet
 elif [[ "$1" != "restart" ]]; then
   # Make sure we have the latest files.
   e_header "Updating dotfiles"
