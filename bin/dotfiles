@@ -393,7 +393,7 @@ while true; do sudo -n true; sleep 10; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Ensure that we can actually, like, compile anything.
 if [[ ! "$(xcode-select -p)" ]] && is_osx; then
-  xcode-select --install
+  e_error "Xcode Dev Tools should be installed. They Aren't. Aborting."
 fi
 
 # If Git is not installed, install it (Ubuntu only, since Git comes standard
