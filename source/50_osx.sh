@@ -5,4 +5,4 @@ is_osx || return 1
 alias c="tr -d '\n' | pbcopy"
 
 # Make 'less' more.
-[[ "$(type -P lesspipe.sh)" ]] && eval "$(lesspipe.sh)"
+[[ "$(command -v lesspipe.sh)" ]] && eval "$(lesspipe.sh)"

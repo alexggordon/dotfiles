@@ -1,6 +1,3 @@
-path+=('~/.local/bin')
-path+=('$DOTFILES/bin')
-path+=('/usr/local/bin')
-typeset -U path
-
-export PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=~/.local/bin:$PATH
+export PATH=$DOTFILES/bin:$PATH
