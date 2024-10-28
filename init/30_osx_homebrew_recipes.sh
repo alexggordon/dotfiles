@@ -27,6 +27,8 @@ recipes=(
   duckdb
   tldr
   libyaml
+  openssl@3
+  readline
 )
 
 brew_install_recipes
