@@ -8,4 +8,6 @@ antidote load
 
 eval "$(starship init zsh)"
 
+export ZSH_THEME=zephyr
+
 prompt starship $ZSH_THEME
