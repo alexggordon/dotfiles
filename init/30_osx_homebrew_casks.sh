@@ -29,6 +29,8 @@ casks=(
   hazel
   chatgpt
   slack
+  openssl
+  readline
 
   # text editors
   obsidian
