@@ -30,7 +30,9 @@ casks=(
   rectangle
   docker
   datagrip # (no)sql application
-
+  anki
+  whatsapp
+  calibre
 
   # text editors
   obsidian
