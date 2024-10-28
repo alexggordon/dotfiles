@@ -1,5 +1,4 @@
 # setup zsh prompt 
-autoload -Uz promptinit && promptinit
 
 # source antidote
 source $DOTFILES/vendor/antidote/antidote.zsh
@@ -8,6 +7,8 @@ antidote load
 
 eval "$(starship init zsh)"
 
-export ZSH_THEME=zephyr
+# must be done after the above
+autoload -Uz promptinit && promptinit
 
+export ZSH_THEME=zephyr
 prompt starship $ZSH_THEME

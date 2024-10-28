@@ -666,13 +666,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97999999999999998</real>
+				<real>0.12103271484375</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.97999999999999998</real>
+				<real>0.099111050367355347</real>
 				<key>Red Component</key>
-				<real>0.97999999999999998</real>
+				<real>0.0806884765625</real>
 			</dict>
 			<key>Background Color (Dark)</key>
 			<dict>
@@ -707,13 +707,13 @@
 				<key>Alpha Component</key>
 				<real>0.5</real>
 				<key>Blue Component</key>
-				<real>0.11610633134841919</real>
+				<real>0.65218597462148864</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.11610633134841919</real>
+				<real>0.65218597462148864</real>
 				<key>Red Component</key>
-				<real>0.74613857269287109</real>
+				<real>0.9787440299987793</real>
 			</dict>
 			<key>Badge Color (Dark)</key>
 			<dict>
@@ -752,13 +752,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.062745101749897003</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.062745101749897003</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.062745101749897003</real>
+				<real>0.99999600648880005</real>
 			</dict>
 			<key>Bold Color (Dark)</key>
 			<dict>
@@ -788,6 +788,12 @@
 			</dict>
 			<key>Bound Hosts</key>
 			<array/>
+			<key>Brighten Bold Text</key>
+			<true/>
+			<key>Brighten Bold Text (Dark)</key>
+			<true/>
+			<key>Brighten Bold Text (Light)</key>
+			<true/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -796,20 +802,24 @@
 			<integer>80</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Cursor Boost</key>
+			<real>0.0</real>
 			<key>Cursor Boost (Dark)</key>
+			<real>0.0</real>
+			<key>Cursor Boost (Light)</key>
 			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.54802584648132324</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.92225033044815063</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.56797939538955688</real>
 			</dict>
 			<key>Cursor Color (Dark)</key>
 			<dict>
@@ -842,13 +852,13 @@
 				<key>Alpha Component</key>
 				<real>0.25</real>
 				<key>Blue Component</key>
-				<real>0.85319280624389648</real>
+				<real>0.28459030389785767</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.77217715978622437</real>
+				<real>0.26351484656333923</real>
 				<key>Red Component</key>
-				<real>0.52338260412216187</real>
+				<real>0.22432979941368103</real>
 			</dict>
 			<key>Cursor Guide Color (Dark)</key>
 			<dict>
@@ -881,13 +891,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.0</real>
 			</dict>
 			<key>Cursor Text Color (Dark)</key>
 			<dict>
@@ -927,7 +937,11 @@
 			<string>Default</string>
 			<key>Disable Window Resizing</key>
 			<true/>
+			<key>Faint Text Alpha</key>
+			<real>0.49476709905660377</real>
 			<key>Faint Text Alpha (Dark)</key>
+			<real>0.49476709905660377</real>
+			<key>Faint Text Alpha (Light)</key>
 			<real>0.49476709905660377</real>
 			<key>Flashing Bell</key>
 			<true/>
@@ -936,13 +950,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.062745101749897003</real>
+				<real>0.924468994140625</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.062745101749897003</real>
+				<real>0.92446893453598022</real>
 				<key>Red Component</key>
-				<real>0.062745101749897003</real>
+				<real>0.924468994140625</real>
 			</dict>
 			<key>Foreground Color (Dark)</key>
 			<dict>
@@ -1452,7 +1466,50 @@
 				<key>Red Component</key>
 				<real>0.19802422821521759</real>
 			</dict>
+			<key>Match Background Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.99999994039535522</real>
+			</dict>
+			<key>Match Background Color (Dark)</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.99999994039535522</real>
+			</dict>
+			<key>Match Background Color (Light)</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.99999994039535522</real>
+			</dict>
+			<key>Minimum Contrast</key>
+			<real>0.0</real>
 			<key>Minimum Contrast (Dark)</key>
+			<real>0.0</real>
+			<key>Minimum Contrast (Light)</key>
 			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
@@ -1564,7 +1621,11 @@
 			<true/>
 			<key>Silence Bell</key>
 			<false/>
+			<key>Smart Cursor Color</key>
+			<false/>
 			<key>Smart Cursor Color (Dark)</key>
+			<false/>
+			<key>Smart Cursor Color (Light)</key>
 			<false/>
 			<key>Status Bar Layout</key>
 			<dict>
@@ -1759,14 +1820,40 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Bright Bold (Dark)</key>
+			<true/>
+			<key>Use Bright Bold (Light)</key>
+			<true/>
+			<key>Use Cursor Guide</key>
+			<true/>
 			<key>Use Cursor Guide (Dark)</key>
+			<true/>
+			<key>Use Cursor Guide (Light)</key>
 			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
 			<false/>
-			<key>Use Separate Colors for Light and Dark Mode</key>
+			<key>Use Selected Text Color</key>
 			<true/>
+			<key>Use Selected Text Color (Dark)</key>
+			<true/>
+			<key>Use Selected Text Color (Light)</key>
+			<true/>
+			<key>Use Separate Colors for Light and Dark Mode</key>
+			<false/>
+			<key>Use Tab Color</key>
+			<false/>
+			<key>Use Tab Color (Dark)</key>
+			<false/>
+			<key>Use Tab Color (Light)</key>
+			<false/>
+			<key>Use Underline Color</key>
+			<false/>
+			<key>Use Underline Color (Dark)</key>
+			<false/>
+			<key>Use Underline Color (Light)</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
