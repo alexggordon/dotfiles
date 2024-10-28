@@ -26,6 +26,7 @@ recipes=(
   wget
   duckdb
   tldr
+  libyaml
 )
 
 brew_install_recipes

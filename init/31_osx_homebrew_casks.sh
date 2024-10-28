@@ -16,8 +16,6 @@ casks=(
   font-monaspace
 
   # Applications
-  datagrip # (no)sql application
-  docker
   hex-fiend # hex visualizer
   iterm2
   licecap # record screen directly to gif
@@ -27,10 +25,13 @@ casks=(
   steam
   vlc
   hazel
+  thefuck
   chatgpt
   slack
   openssl
   readline
+  docker
+  datagrip # (no)sql application
 
   # text editors
   obsidian
