@@ -25,13 +25,12 @@ casks=(
   steam
   vlc
   hazel
-  thefuck
   chatgpt
   slack
-  openssl
-  readline
+  rectangle
   docker
   datagrip # (no)sql application
+
 
   # text editors
   obsidian
