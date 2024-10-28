@@ -2,7 +2,7 @@
 source $DOTFILES/source/50_ruby.sh
 
 # Install Ruby.
-if [[ "$(type -P rbenv)" ]]; then
+if [[ "$(command -v rbenv)" ]]; then
   versions=(3.3.5)
 
   rubies=($(setdiff "${versions[*]}" "$(rbenv whence ruby)"))

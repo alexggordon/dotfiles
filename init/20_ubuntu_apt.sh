@@ -69,20 +69,6 @@ add_ppa ppa:greymd/tmux-xpanes
 apt_packages+=(tmux-xpanes)
 
 if is_ubuntu_desktop; then
-  # http://www.omgubuntu.co.uk/2016/06/install-latest-arc-gtk-theme-ubuntu-16-04
-  # apt_keys+=(http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key)
-  # apt_source_files+=(arc-theme)
-  # apt_source_texts+=("deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /")
-  # apt_packages+=(arc-theme)
-
-  add_ppa ppa:fossfreedom/arc-gtk-theme-daily
-  apt_packages+=(arc-theme)
-
-  # https://www.techrepublic.com/article/how-to-connect-a-linux-machine-to-google-cloud-print/
-  # sudo /usr/share/cloudprint-cups/setupcloudprint.py
-  add_ppa ppa:simon-cadman/niftyrepo
-  apt_packages+=(cupscloudprint)
-
   # https://github.com/tagplus5/vscode-ppa
   apt_keys+=(https://tagplus5.github.io/vscode-ppa/ubuntu/gpg.key)
   apt_source_files+=(vscode.list)
@@ -106,19 +92,6 @@ if is_ubuntu_desktop; then
   apt_source_texts+=("deb http://repository.spotify.com stable non-free")
   apt_packages+=(spotify-client)
 
-  # https://tecadmin.net/install-oracle-virtualbox-on-ubuntu/
-  apt_keys+=(https://www.virtualbox.org/download/oracle_vbox_2016.asc)
-  apt_source_files+=(virtualbox)
-  apt_source_texts+=("deb http://download.virtualbox.org/virtualbox/debian $release_name contrib")
-  apt_packages+=(virtualbox-5.1)
-
-  # https://www.skype.com/en/download-skype/skype-for-linux/
-  # https://community.skype.com/t5/Linux/Skype-for-Linux-Beta-signatures-couldn-t-be-verified-because-the/td-p/4645756
-  apt_keys+=(https://repo.skype.com/data/SKYPE-GPG-KEY)
-  apt_source_files+=(skype-stable)
-  apt_source_texts+=("deb https://repo.skype.com/deb stable main")
-  apt_packages+=(skypeforlinux)
-
   # http://askubuntu.com/a/190674
   add_ppa ppa:webupd8team/java
   apt_packages+=(oracle-java8-installer)
@@ -127,44 +100,20 @@ if is_ubuntu_desktop; then
     echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
   }
 
-  # https://github.com/colinkeenan/silentcast/#ubuntu
-  # https://github.com/colinkeenan/silentcast/#ubuntu-linux-full-install
-  add_ppa ppa:sethj/silentcast
-  add_ppa ppa:webupd8team/y-ppa-manager
-  apt_packages+=(
-    libav-tools x11-xserver-utils xdotool wininfo wmctrl python-gobject python-cairo xdg-utils yad
-    silentcast
-  )
-
   # Misc
   apt_packages+=(adb fastboot)
   apt_packages+=(
-    chromium-browser
     fonts-mplus
     gnome-tweak-tool
     k4dirstat
     rofi
     network-manager-openconnect
     network-manager-openconnect-gnome
-    openssh-server
     shutter
     unity-tweak-tool
-    vlc
     xclip
     zenmap
   )
-
-  # Manage online accounts via "gnome-control-center" in launcher
-  apt_packages+=(gnome-control-center gnome-online-accounts)
-
-  # https://github.com/mitchellh/vagrant/issues/7411
-  deb_installed+=(/usr/bin/vagrant)
-  deb_sources+=(https://releases.hashicorp.com/vagrant/1.9.2/vagrant_1.9.2_x86_64.deb)
-  # https://github.com/vagrant-libvirt/vagrant-libvirt/issues/575
-  # apt_packages+=(vagrant)
-  # function postinstall_vagrant() {
-  #   sudo sed -i'' "s/Specification.all = nil/Specification.reset/" /usr/lib/ruby/vendor_ruby/vagrant/bundler.rb
-  # }
 
   # https://be5invis.github.io/Iosevka/
   # https://launchpad.net/~laurent-boulard/+archive/ubuntu/fonts
@@ -226,7 +175,7 @@ fi
 
 function other_stuff() {
   # Install Git Extras
-  if [[ ! "$(type -P git-extras)" ]]; then
+  if [[ ! "$(command -v git-extras)" ]]; then
     e_header "Installing Git Extras"
     (
       cd $DOTFILES/vendor/git-extras &&

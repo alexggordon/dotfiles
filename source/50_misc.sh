@@ -1,18 +1,10 @@
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
-
-# Check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+setopt EXTENDED_GLOB
 
 alias grep='grep --color=auto'
 
 # Prevent less from clearing the screen while still showing colors.
 export LESS=-XR
-
-
-# Disable ansible cows }:]
-export ANSIBLE_NOCOWS=1
 
 # "fuck"
 if [[ "$(which thefuck)" ]]; then
