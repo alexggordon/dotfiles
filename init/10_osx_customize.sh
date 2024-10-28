@@ -1,12 +1,9 @@
 # OSX-only stuff. Abort if not OSX.
 is_osx || return 1
 
+# adopted from https://mths.be/macos
 
-
-
-#!/usr/bin/env bash
-
-# ~/.macos — https://mths.be/macos
+softwareupdate --install-rosetta --agree-to-license
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -240,9 +237,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-
-# Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
 
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes

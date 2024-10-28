@@ -1,10 +1,5 @@
-paths=(
-  ~/.local/bin
-  $DOTFILES/bin
-)
+path+=('~/.local/bin')
+path+=('$DOTFILES/bin')
+typeset -U path
 
 export PATH
-for p in "${paths[@]}"; do
-  [[ -d "$p" ]] && PATH="$p:$(path_remove "$p")"
-done
-unset p paths
