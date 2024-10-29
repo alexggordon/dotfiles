@@ -42,12 +42,10 @@ casks=(
   visual-studio-code
   
   # Quick Look plugins
-  qlcolorcode
+  syntax-highlight
   qlmarkdown
-  qlstephen
   quicklook-csv
   quicklook-json
-  webpquicklook
   suspicious-package
 )
 
